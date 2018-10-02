@@ -1,0 +1,125 @@
+@import "/css/components/_fonts.css";
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width:100%;
+}
+
+body {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+a {
+    color: #363636;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #00ff80;
+}
+
+.nav {
+    align-items: center;
+    padding: 0px 10%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    font-size: 0.9em;
+    font-weight: 700;
+    grid-row: 1/2;
+
+}
+
+.nav__brand {
+    justify-self: start;
+    display: block;
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.nav__item {
+    display: block;
+}
+
+.main {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+.main__content {
+    grid-column: 1/2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.career {
+    font-weight: 300;
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+.bio {
+    margin-bottom: 0px;
+    font-size:1.15em;
+}
+
+.scripture__quote, .scripture__text {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.scripture__text {
+    margin-bottom: 0px;
+    font-style: italic;
+}
+.scripture__quote {
+    font-style: italic;
+}
+
+.main__image {
+    grid-column: 2/3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -20%;
+}
+.profile__pic {
+    width: 350px;
+    border-radius: 30px;
+}
+
+.footer {
+    grid-row:3/4;
+    height: 60px;
+    padding: 0px 10%;
+    display: grid;
+    align-items: center;
+}
+
+.social__icon {
+    width: 20px;
+    transition: all 0.2s;
+}
+
+.social__icon:hover {
+    fill: #00ff80;
+}
